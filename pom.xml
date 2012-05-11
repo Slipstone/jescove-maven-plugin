@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>JesCov Maven Plugin</name>
+	<groupId>com.slipstone.mojo</groupId>
+	<artifactId>jescov-maven-plugin</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>maven-plugin</packaging>
+
+
+	<scm>
+		<developerConnection>scm:git:ssh://git@slipstone.beanstalkapp.com:/jescov-maven-plugin.git</developerConnection>
+		<url>scm:git:ssh://git@slipstone.beanstalkapp.com:/jescov-maven-plugin.git</url>
+		<connection>scm:git:ssh://git@slipstone.beanstalkapp.com:/jescov-maven-plugin.git</connection>
+	</scm>
+
+	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>com.slipstone</groupId>
+		<artifactId>superpom</artifactId>
+		<version>0.0.1</version>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-project</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sonatype.plexus</groupId>
+			<artifactId>plexus-build-api</artifactId>
+			<version>0.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.olabini</groupId>
+			<artifactId>jescov</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>plugins</id>
+			<name>The Slipstone plugin repo</name>
+			<url>http://nexus:8081/nexus/content/repositories/plugins/</url>
+		</repository>
+		<snapshotRepository>
+			<id>plugin-snapshots</id>
+			<name>The Slipstone plugin snapshot repo</name>
+			<url>http://nexus:8081/nexus/content/repositories/plugin-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
