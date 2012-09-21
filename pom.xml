@@ -5,7 +5,7 @@
 	<name>JesCov Maven Plugin</name>
 	<groupId>com.slipstone.mojo</groupId>
 	<artifactId>jescov-maven-plugin</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>maven-plugin</packaging>
 
 
